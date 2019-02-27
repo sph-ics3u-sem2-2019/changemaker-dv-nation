@@ -18,6 +18,17 @@ public class Main {
 		System.out.println("How much was paid?");
 		double payment=in.nextDouble();
 		//TODO: Here is where your code goes
-	}
+		double change=payment-cost;
+		int num100s;
+		int num50s;
+		int num20s;
+		int num10s;
+		//How many 100 dollar bills?
+		System.out.println("Your change is "+change);
+		//Fund out how much money is left
+		change=change%100;
+		//How many 50s?
 
+		num100s=(int)(change/100);
+	}
 }
